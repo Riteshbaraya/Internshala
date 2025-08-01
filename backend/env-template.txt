@@ -1,0 +1,24 @@
+# Database Configuration
+DATABASE_URL=mongodb://localhost:27017/internshala-clone
+
+# JWT Secret
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+
+# Email Configuration (Gmail SMTP)
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-gmail-app-password
+
+# Razorpay Configuration
+RAZORPAY_KEY_ID=rzp_test_your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_secret_key
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# CORS Configuration
+FRONTEND_URL=http://localhost:3000
+
+# IP Address Detection (Optional - for better IP detection)
+# If you want to use a service like ipapi.co, add your API key
+IP_API_KEY=your_ip_api_key_optional 

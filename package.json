@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.2",
+    "@react-google-maps/api": "^2.20.7",
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.9.4",
+    "mongoose": "^8.16.1",
+    "nodemailer": "^7.0.5",
+    "react-leaflet": "^5.0.0"
+  }
+}
