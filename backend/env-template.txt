@@ -1,5 +1,9 @@
 # Database Configuration
+# For Local Development:
 DATABASE_URL=mongodb://localhost:27017/internshala-clone
+
+# For MongoDB Atlas (Production):
+# DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/internshala-clone?retryWrites=true&w=majority
 
 # JWT Secret
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
@@ -21,4 +25,23 @@ FRONTEND_URL=http://localhost:3000
 
 # IP Address Detection (Optional - for better IP detection)
 # If you want to use a service like ipapi.co, add your API key
-IP_API_KEY=your_ip_api_key_optional 
+IP_API_KEY=your_ip_api_key_optional
+
+# ==========================================
+# DEPLOYMENT NOTES:
+# ==========================================
+# For Render Deployment:
+# 1. Set DATABASE_URL to your Atlas connection string
+# 2. Set NODE_ENV=production
+# 3. Set JWT_SECRET to a strong production secret
+# 4. Configure SMTP for production email sending
+# 5. Use production Razorpay keys
+#
+# Atlas Connection String Format:
+# mongodb+srv://username:password@cluster.mongodb.net/database-name?retryWrites=true&w=majority
+#
+# Atlas Setup Steps:
+# 1. Create cluster in MongoDB Atlas
+# 2. Create database user with read/write permissions
+# 3. Configure network access (IP whitelist or 0.0.0.0/0 for all)
+# 4. Get connection string from Atlas dashboard 

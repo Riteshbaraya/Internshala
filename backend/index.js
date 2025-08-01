@@ -81,11 +81,16 @@ app.get("/health", (req, res) => {
 app.use("/api", router);
 
 // Connect to database (but don't block server startup)
+console.log("🚀 Starting server...");
+console.log("🔗 Initializing database connection...");
+
 try {
   connect();
+  console.log("✅ Database connection initiated successfully");
 } catch (error) {
   console.log("⚠️ Database connection failed, but server will continue running");
   console.log("💡 Some features may not work without database connection");
+  console.log("🔧 Error details:", error.message);
 }
 
 // Error handling middleware
