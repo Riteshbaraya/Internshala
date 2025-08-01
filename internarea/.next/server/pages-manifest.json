@@ -3,11 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/profile": "pages/profile.js",
-  "/my-logins": "pages/my-logins.js",
-  "/subscribe": "pages/subscribe.js",
-  "/userapplication": "pages/userapplication.js",
-  "/job": "pages/job.js",
-  "/detailjob/[id]": "pages/detailjob/[id].js",
-  "/user-auth": "pages/user-auth.js"
+  "/profile": "pages/profile.js"
 }
